@@ -1,5 +1,6 @@
 {
     "name": "Great White Shark Simulator",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "device": "*",
