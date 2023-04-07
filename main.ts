@@ -19,7 +19,7 @@ function startUp () {
     MakeyMakey.MakeyMakeyKey.LEFT,
     MakeyMakey.MakeyMakeyKey.RIGHT,
     MakeyMakey.MakeyMakeyKey.SPACE,
-    MakeyMakey.MakeyMakeyKey.S
+    MakeyMakey.MakeyMakeyKey.RIGHT_CLICK
     )
 }
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
@@ -31,7 +31,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 let fish: Sprite = null
 let playerEntity: Sprite = null
 startUp()
-music.play(music.createSong(assets.song`background`), music.PlaybackMode.LoopingInBackground)
 game.showLongText("A TebiBit Studios Production", DialogLayout.Full)
 game.splash("Great White Shark Simulator", "Press A To Play")
 forever(function () {
